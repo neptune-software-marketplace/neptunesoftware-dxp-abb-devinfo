@@ -1,0 +1,27 @@
+{
+	"id": "3fbd63bf-7904-ee11-907c-000d3aba433d",
+	"createdAt": "2023-06-06T14:52:25.376Z",
+	"createdBy": "jens-uwe.gross@neptune-software.com",
+	"globalScripts": [],
+	"externalModules": [
+		{
+			"id": "88CDE492-9935-ED11-A27C-E42AAC61C092",
+			"name": "typeorm",
+			"contextname": "typeorm",
+			"path": "typeorm"
+		}
+	],
+	"entitySets": [],
+	"apis": [],
+	"name": "roleDetailDirect",
+	"ver": "23.7.25.1518",
+	"description": null,
+	"content": "file:///content.js",
+	"useAsGlobalScript": false,
+	"transpiledContent": null,
+	"lastRunSuccessful": true,
+	"isTypescript": false,
+	"language": "javascript",
+	"jsscriptGroup": "e1ba4c8b-7c04-ee11-907c-000d3aba433d",
+	"package": "93e1803f-3404-ee11-907c-000d3aba433d"
+}

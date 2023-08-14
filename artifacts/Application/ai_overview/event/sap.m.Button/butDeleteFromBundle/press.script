@@ -1,0 +1,11 @@
+const indices = treeBundle.getSelectedIndices();
+
+const selected = [];
+
+for (const index of indices) {
+    const ctx = treeBundle.getContextByIndex(index);
+    const data = ctx.getObject();
+    selected.push(data);
+}
+
+currentBundle.removeData(selected);

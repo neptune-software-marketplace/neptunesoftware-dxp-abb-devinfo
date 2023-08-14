@@ -1,0 +1,477 @@
+{
+	"id": "b478fc5a-a4bd-ed11-a8e0-000d3aba7851",
+	"createdAt": "2023-03-08T11:28:32.723Z",
+	"createdBy": "jens-uwe.gross@neptune-software.com",
+	"auth": [],
+	"endpoints": [],
+	"paths": [
+		{
+			"id": "11239e42-1b7a-44a9-afc0-e3657e75fc8c",
+			"method": "GET",
+			"path": "/artifactTrees",
+			"description": "",
+			"parameters": [],
+			"headers": [],
+			"responses": [],
+			"content": [],
+			"auth": [],
+			"endpoints": [],
+			"serverScript": "6938e4cd-16da-ed11-9f73-000d3aba78d6",
+			"tags": "Artifacts"
+		},
+		{
+			"id": "5a7ba0ee-f0b3-4dbe-f117-3db8c057ac94",
+			"method": "GET",
+			"path": "/roleSummary",
+			"description": "",
+			"parameters": [],
+			"headers": [],
+			"responses": [
+				{
+					"id": "f7174bb3-d40a-4790-c7b6-eb9338f47852",
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"content": [
+						{
+							"id": "a2bfd1ef-4a18-4492-bb17-baf41c2edd4b",
+							"name": "roleListEntry",
+							"objectType": "array"
+						}
+					]
+				}
+			],
+			"content": [],
+			"auth": [],
+			"endpoints": [],
+			"serverScript": "fc7da110-6e04-ee11-907c-000d3aba433d",
+			"tags": "Roles"
+		},
+		{
+			"id": "7057d112-f9b1-4407-e999-f45f596f1073",
+			"method": "POST",
+			"path": "/roleDetail",
+			"description": "",
+			"parameters": [],
+			"headers": [],
+			"responses": [],
+			"content": [
+				{
+					"objectType": "object",
+					"items": [],
+					"name": "Id"
+				}
+			],
+			"auth": [],
+			"endpoints": [],
+			"serverScript": "3fbd63bf-7904-ee11-907c-000d3aba433d",
+			"tags": "Roles"
+		},
+		{
+			"id": "6488db9f-7f37-471e-f50c-11b5cada7f64",
+			"method": "GET",
+			"path": "/snapshots",
+			"description": "",
+			"parameters": [],
+			"headers": [],
+			"responses": [
+				{
+					"id": "d3d7e033-0a4d-4ea6-aea3-a55faaf5ac9e",
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"content": [
+						{
+							"id": "bf0dc18e-31d1-4a0b-a51c-7ab1681742df",
+							"name": "snapshotData",
+							"objectType": "array"
+						}
+					]
+				}
+			],
+			"content": [],
+			"auth": [],
+			"endpoints": [],
+			"serverScript": "ddaa5527-3d04-ee11-907c-000d3aba433d",
+			"tags": "Snapshots"
+		},
+		{
+			"id": "f78d2afe-1ee8-43cc-de90-ed8cdd2d806d",
+			"method": "POST",
+			"path": "/snapshots",
+			"description": "",
+			"parameters": [],
+			"headers": [],
+			"responses": [
+				{
+					"id": "771c64fe-a1f7-428d-b06b-1485933eb211",
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"content": [
+						{
+							"id": "3184fa2f-13b6-4ac0-f765-0fb76caf5a1c",
+							"name": "snapshotData",
+							"objectType": "array"
+						}
+					]
+				}
+			],
+			"content": [],
+			"auth": [],
+			"endpoints": [],
+			"serverScript": "6bfd9ed4-b1bd-ed11-a8e0-000d3aba7851",
+			"tags": "Snapshots"
+		},
+		{
+			"id": "59f6696a-afe7-4abb-e5da-0b0cd0ab860d",
+			"method": "DELETE",
+			"path": "/snapshots",
+			"description": "",
+			"parameters": [],
+			"headers": [],
+			"responses": [
+				{
+					"id": "6dbec02b-7a8b-469a-ae43-a17d05d77fe1",
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"content": [
+						{
+							"id": "5e4cc3bc-fedf-4291-ca3b-c07b8c788fc6",
+							"name": "snapshotData",
+							"objectType": "array"
+						}
+					]
+				}
+			],
+			"content": [
+				{
+					"objectType": "array",
+					"items": [],
+					"name": "Id"
+				}
+			],
+			"auth": [],
+			"endpoints": [],
+			"serverScript": "a8b54700-4404-ee11-907c-000d3aba433d",
+			"tags": "Snapshots"
+		}
+	],
+	"definitions": [
+		{
+			"id": "4c238b3e-a459-4c2b-f347-2aab1fc6e8d8",
+			"name": "launchpadTree",
+			"description": "",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "f0ce538b-3004-4f7d-d3c7-25d1d6bc9c9b",
+					"name": "id",
+					"objectType": "string",
+					"description": "",
+					"required": false,
+					"value": "",
+					"minLength": "",
+					"maxLength": "",
+					"default": "",
+					"example": "",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "f093e90d-396c-4a3b-e696-e80357320007",
+					"name": "name",
+					"objectType": "string",
+					"description": "",
+					"required": false,
+					"value": "",
+					"minLength": "",
+					"maxLength": "",
+					"default": "",
+					"example": "",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "fed78372-4a00-4daf-ca19-8579d8fb24e4",
+					"name": "description",
+					"objectType": "string",
+					"description": "",
+					"required": false,
+					"value": "",
+					"minLength": "",
+					"maxLength": "",
+					"default": "",
+					"example": "",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "7e387d35-97dd-4bd9-8662-b91f8556909b",
+					"name": "title",
+					"objectType": "string",
+					"description": "",
+					"required": false,
+					"value": "",
+					"minLength": "",
+					"maxLength": "",
+					"default": "",
+					"example": "",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "b86e5d95-3569-4745-985d-b4cf412ab9e3",
+					"name": "type",
+					"objectType": "string",
+					"description": "",
+					"required": false,
+					"value": "",
+					"minLength": "",
+					"maxLength": "",
+					"default": "",
+					"example": "",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "af10595e-913a-4358-dc74-1783868ac676",
+					"name": "artifact_id",
+					"objectType": "string",
+					"description": "",
+					"required": false,
+					"value": "",
+					"minLength": "",
+					"maxLength": "",
+					"default": "",
+					"example": "",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "402949a5-e15b-4ade-cd82-a4f4f2cb50eb",
+					"name": "parent_id",
+					"objectType": "string",
+					"description": "",
+					"required": false,
+					"value": "",
+					"minLength": "",
+					"maxLength": "",
+					"default": "",
+					"example": "",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				}
+			]
+		},
+		{
+			"id": "b35335b8-325d-4227-947c-7f802c191617",
+			"name": "roleListEntry",
+			"description": "",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "753fb7e2-7881-41e8-b45d-73f9af3e7f17",
+					"name": "id",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "25e7ddc3-56f7-4260-bd7f-257fe1abca09",
+					"name": "name",
+					"parent": "",
+					"description": "",
+					"objectType": "string",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "755a99d3-3bd2-49bb-eb3d-6367911ac66a",
+					"name": "cockpitAccess",
+					"parent": "",
+					"description": "",
+					"objectType": "boolean",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "e5e59e23-9c5a-499c-9982-e5775b3be85c",
+					"name": "sec_groups",
+					"parent": "",
+					"description": "",
+					"objectType": "number",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "6f4a5435-20ed-4104-eb3e-f58d52504129",
+					"name": "tile_groups",
+					"parent": "",
+					"description": "",
+					"objectType": "number",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "f9438326-5345-4e57-d7e3-4736ffc175fa",
+					"name": "tiles",
+					"parent": "",
+					"description": "",
+					"objectType": "number",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				}
+			]
+		},
+		{
+			"id": "2b69e6bc-aa51-4d82-f208-54ff1f9d91c1",
+			"name": "Id",
+			"description": "",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "29e79af7-b837-435e-ecd7-8a03da195896",
+					"name": "id",
+					"objectType": "string",
+					"description": "",
+					"required": true,
+					"value": "",
+					"minLength": "",
+					"maxLength": "",
+					"default": "",
+					"example": "",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				}
+			]
+		},
+		{
+			"id": "caa1ee12-311e-40a8-d15e-243cd8455422",
+			"name": "snapshotData",
+			"description": "",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "4ea2b57e-c764-461e-a48f-e2dee2a40bb6",
+					"name": "id",
+					"objectType": "string",
+					"description": "",
+					"required": false,
+					"value": "",
+					"minLength": "",
+					"maxLength": "",
+					"default": "",
+					"example": "",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				},
+				{
+					"id": "ffb0184f-a480-41fb-a28a-bbe950868114",
+					"name": "createdAt",
+					"objectType": "integer",
+					"description": "",
+					"required": false,
+					"value": "",
+					"minLength": "",
+					"maxLength": "",
+					"default": "",
+					"example": "",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"showNameField": true,
+					"children": []
+				}
+			]
+		}
+	],
+	"documentation": [],
+	"name": "DevelopmentInfosystem",
+	"endpoint": "/api/serverscript/developmentinfosystem",
+	"ver": "23.7.21.1541",
+	"version": null,
+	"description": null,
+	"mediaType": null,
+	"securitySchemes": null,
+	"swaggerURI": null,
+	"swaggerSystem": null,
+	"apiType": "script",
+	"about": null,
+	"enableProxy": false,
+	"restrictAccess": false,
+	"enableTrace": false,
+	"enableIDE": true,
+	"internalAPI": false,
+	"isPublic": false,
+	"tlsAllowUntrusted": false,
+	"useOwnProcess": false,
+	"package": "93e1803f-3404-ee11-907c-000d3aba433d",
+	"apiGroup": "f2fb47f1-a3bd-ed11-a8e0-000d3aba7851",
+	"apiFormat": 0,
+	"roles": []
+}

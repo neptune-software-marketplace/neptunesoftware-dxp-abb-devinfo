@@ -1,0 +1,23 @@
+{
+	"id": "7ccbd64c-ae0a-ee11-907c-000d3aba433d",
+	"createdAt": "2023-06-14T12:23:43.630Z",
+	"createdBy": "jens-uwe.gross@neptune-software.com",
+	"fields": [
+		{
+			"id": "9d1d1f83-e486-49ba-e20c-2539275c5504",
+			"fieldName": "name",
+			"fieldType": "text",
+			"isUnique": false
+		}
+	],
+	"indices": [],
+	"foreignKeys": [],
+	"name": "dev_infosystem_snapshot",
+	"description": null,
+	"ver": "23.6.14.1423",
+	"enableAudit": false,
+	"includeDataInPackage": false,
+	"package": "93e1803f-3404-ee11-907c-000d3aba433d",
+	"rolesRead": [],
+	"rolesWrite": []
+}

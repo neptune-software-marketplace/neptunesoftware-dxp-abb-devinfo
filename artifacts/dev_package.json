@@ -1,0 +1,138 @@
+{
+	"id": "93e1803f-3404-ee11-907c-000d3aba433d",
+	"createdAt": "2023-06-06T06:34:55.573Z",
+	"createdBy": "jens-uwe.gross@neptune-software.com",
+	"git": {
+		"remote": "https://github.com/neptune-software-marketplace/neptunesoftware-dxp-abb-devinfo.git"
+	},
+	"name": "neptunesoftware-dxp-abb-devinfo",
+	"description": "Neptune DXP Open Edition Development Infosystem",
+	"ver": "23.8.14.1421",
+	"enableCICD": true,
+	"apps": [
+		{
+			"id": "5cdbb81b-12da-ed11-9f73-000d3aba78d6",
+			"application": "ai_overview",
+			"title": "Development Infosystem",
+			"description": "Development Infosystem"
+		}
+	],
+	"api": [
+		{
+			"id": "b478fc5a-a4bd-ed11-a8e0-000d3aba7851",
+			"name": "DevelopmentInfosystem",
+			"description": null,
+			"apiGroup": "f2fb47f1-a3bd-ed11-a8e0-000d3aba7851"
+		},
+		{
+			"id": "3d0b1390-840c-ee11-907c-000d3aba433d",
+			"name": "DevelopmentInfosystemBundles",
+			"description": null,
+			"apiGroup": "f2fb47f1-a3bd-ed11-a8e0-000d3aba7851"
+		}
+	],
+	"odataSource": [],
+	"odataMock": [],
+	"dictionary": [
+		{
+			"id": "7ccbd64c-ae0a-ee11-907c-000d3aba433d",
+			"name": "dev_infosystem_snapshot",
+			"description": null
+		},
+		{
+			"id": "7c188a83-a6bd-ed11-a8e0-000d3aba7851",
+			"name": "dev_infosystem_snapshot_data",
+			"description": null
+		},
+		{
+			"id": "2b7fe03f-840c-ee11-907c-000d3aba433d",
+			"name": "dev_infosystem_bundle",
+			"description": null
+		}
+	],
+	"jsclass": [
+		{
+			"id": "fc7da110-6e04-ee11-907c-000d3aba433d",
+			"name": "roleListDirect",
+			"description": null
+		},
+		{
+			"id": "ddaa5527-3d04-ee11-907c-000d3aba433d",
+			"name": "listSnapshots",
+			"description": null
+		},
+		{
+			"id": "a8b54700-4404-ee11-907c-000d3aba433d",
+			"name": "deleteSnapshots",
+			"description": null
+		},
+		{
+			"id": "71b69969-effa-ed11-907c-000d3aba412f",
+			"name": "artifactScraperDirect",
+			"description": null
+		},
+		{
+			"id": "6bfd9ed4-b1bd-ed11-a8e0-000d3aba7851",
+			"name": "crawlArtifacts",
+			"description": null
+		},
+		{
+			"id": "6938e4cd-16da-ed11-9f73-000d3aba78d6",
+			"name": "artifactTree",
+			"description": null
+		},
+		{
+			"id": "3fbd63bf-7904-ee11-907c-000d3aba433d",
+			"name": "roleDetailDirect",
+			"description": null
+		}
+	],
+	"jsscript_group": [
+		{
+			"id": "e1ba4c8b-7c04-ee11-907c-000d3aba433d",
+			"name": "DevelopmentInfosystem",
+			"description": null
+		}
+	],
+	"theme": [],
+	"pdf": [],
+	"rulesengine": [],
+	"reports": [],
+	"api_authentication": [],
+	"api_group": [
+		{
+			"id": "f2fb47f1-a3bd-ed11-a8e0-000d3aba7851",
+			"name": "Development Infosystem",
+			"description": "Development Infosystem"
+		}
+	],
+	"tile": [
+		{
+			"id": "5498d7dd-c7bd-ed11-a8e0-000d3aba7851",
+			"description": "All development artifacts at your fingertips",
+			"name": "Development Infosystem"
+		}
+	],
+	"category": [],
+	"launchpad": [],
+	"certificates": [],
+	"role": [
+		{
+			"id": "cf181fed-a106-ee11-907c-000d3aba433d",
+			"name": "neptunesoftware-devinfo",
+			"description": "Access to Development Infosystem"
+		}
+	],
+	"systems": [],
+	"doc": [],
+	"wf_notifications": [],
+	"department": [],
+	"script_scheduler": [],
+	"wf_definition": [],
+	"connector": [],
+	"events": [],
+	"media_library": [],
+	"code_snippets": [],
+	"wf_determination": [],
+	"wf_taskaction": []
+}

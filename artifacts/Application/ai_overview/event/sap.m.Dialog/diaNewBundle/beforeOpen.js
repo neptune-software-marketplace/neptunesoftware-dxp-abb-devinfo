@@ -1,0 +1,2 @@
+modelformNewBundle.setData({});
+informNewName.setValueState();

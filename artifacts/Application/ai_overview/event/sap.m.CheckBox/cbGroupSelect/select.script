@@ -1,0 +1,11 @@
+const context = oEvent.oSource.getBindingContext();  
+
+// Get Single Field
+//const value = context.getProperty("yourField");
+
+// Get Entire Model
+const data = context.getObject();
+
+data.children.map(child => child.single_select = true);
+
+console.log("data345");

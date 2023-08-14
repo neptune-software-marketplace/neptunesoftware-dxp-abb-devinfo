@@ -1,0 +1,37 @@
+{
+	"id": "2b7fe03f-840c-ee11-907c-000d3aba433d",
+	"createdAt": "2023-06-16T20:27:45.480Z",
+	"createdBy": "jens-uwe.gross@neptune-software.com",
+	"fields": [
+		{
+			"id": "056bcf3c-7711-46ab-82a9-83c850ba27d6",
+			"fieldName": "name",
+			"fieldType": "text",
+			"isUnique": false
+		},
+		{
+			"id": "9e0082c7-5e2f-433c-c798-f7b15c8a52a3",
+			"fieldName": "description",
+			"fieldType": "text",
+			"isUnique": false,
+			"isNullable": true
+		},
+		{
+			"id": "8b62af2a-79c2-4346-9694-4f7e4ef58563",
+			"fieldName": "artifacts",
+			"fieldType": "json",
+			"isUnique": false,
+			"isNullable": true
+		}
+	],
+	"indices": [],
+	"foreignKeys": [],
+	"name": "dev_infosystem_bundle",
+	"description": null,
+	"ver": "23.6.16.2242",
+	"enableAudit": false,
+	"includeDataInPackage": false,
+	"package": "93e1803f-3404-ee11-907c-000d3aba433d",
+	"rolesRead": [],
+	"rolesWrite": []
+}

@@ -1,0 +1,24 @@
+sap.m.MessageBox.confirm("Do you really want to delete this bundle?", {onClose: handleConfirmation});
+
+function handleConfirmation(action) {
+
+    if (action === sap.m.MessageBox.Action.OK) {
+        const where = {id: currentBundle.dbData.id};
+
+        var options = {
+            parameters: {
+                "where": JSON.stringify(where)
+            }
+        };
+
+        apideleteBundle(options)
+            .then(function(data) {
+                comboBundle.setSelectedKey("");
+                treeBundle.getModel().setData([]);
+                butDeleteBundle.setEnabled(false);
+                return apilistBundles();
+            });
+    }
+
+
+}

@@ -1,0 +1,41 @@
+{
+	"id": "a8b54700-4404-ee11-907c-000d3aba433d",
+	"createdAt": "2023-06-06T08:27:41.433Z",
+	"createdBy": "jens-uwe.gross@neptune-software.com",
+	"globalScripts": [],
+	"externalModules": [],
+	"entitySets": [
+		{
+			"id": "7C188A83-A6BD-ED11-A8E0-000D3ABA7851",
+			"name": "artifact_infosystem_dependency_graph_snapshot",
+			"contextname": "artifact_infosystem_dependency_graph_snapshot"
+		},
+		{
+			"id": "7CCBD64C-AE0A-EE11-907C-000D3ABA433D",
+			"name": "dev_infosystem_snapshot",
+			"contextname": "dev_infosystem_snapshot"
+		},
+		{
+			"id": "7C188A83-A6BD-ED11-A8E0-000D3ABA7851",
+			"name": "dev_infosystem_snapshot",
+			"contextname": "dev_infosystem_snapshot"
+		},
+		{
+			"id": "7C188A83-A6BD-ED11-A8E0-000D3ABA7851",
+			"name": "dev_infosystem_snapshot_data",
+			"contextname": "dev_infosystem_snapshot_data"
+		}
+	],
+	"apis": [],
+	"name": "deleteSnapshots",
+	"ver": "23.6.14.1350",
+	"description": null,
+	"content": "file:///content.js",
+	"useAsGlobalScript": false,
+	"transpiledContent": null,
+	"lastRunSuccessful": false,
+	"isTypescript": false,
+	"language": "javascript",
+	"jsscriptGroup": "e1ba4c8b-7c04-ee11-907c-000d3aba433d",
+	"package": "93e1803f-3404-ee11-907c-000d3aba433d"
+}

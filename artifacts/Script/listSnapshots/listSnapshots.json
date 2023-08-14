@@ -1,0 +1,26 @@
+{
+	"id": "ddaa5527-3d04-ee11-907c-000d3aba433d",
+	"createdAt": "2023-06-06T07:38:40.470Z",
+	"createdBy": "jens-uwe.gross@neptune-software.com",
+	"globalScripts": [],
+	"externalModules": [],
+	"entitySets": [
+		{
+			"id": "7CCBD64C-AE0A-EE11-907C-000D3ABA433D",
+			"name": "dev_infosystem_snapshot",
+			"contextname": "dev_infosystem_snapshot"
+		}
+	],
+	"apis": [],
+	"name": "listSnapshots",
+	"ver": "23.7.25.1516",
+	"description": null,
+	"content": "file:///content.js",
+	"useAsGlobalScript": false,
+	"transpiledContent": null,
+	"lastRunSuccessful": true,
+	"isTypescript": false,
+	"language": "javascript",
+	"jsscriptGroup": "e1ba4c8b-7c04-ee11-907c-000d3aba433d",
+	"package": "93e1803f-3404-ee11-907c-000d3aba433d"
+}

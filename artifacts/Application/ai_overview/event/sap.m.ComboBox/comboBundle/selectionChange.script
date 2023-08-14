@@ -1,0 +1,9 @@
+const bundleId = comboBundle.getSelectedKey();
+
+currentBundle = modelbundleData.getData().find( x => x.dbData.id === bundleId);
+
+//const bundle = ModelData.FindFirst(comboBundle, "id", bundleId);
+
+currentBundle.createBundleTree();
+
+butDeleteBundle.setEnabled(true);

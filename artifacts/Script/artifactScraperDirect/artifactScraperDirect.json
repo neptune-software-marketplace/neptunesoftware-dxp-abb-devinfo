@@ -1,0 +1,27 @@
+{
+	"id": "71b69969-effa-ed11-907c-000d3aba412f",
+	"createdAt": "2023-05-25T11:29:30.430Z",
+	"createdBy": "jens-uwe.gross@neptune-software.com",
+	"globalScripts": [],
+	"externalModules": [
+		{
+			"id": "88CDE492-9935-ED11-A27C-E42AAC61C092",
+			"name": "typeorm",
+			"contextname": "typeorm",
+			"path": "typeorm"
+		}
+	],
+	"entitySets": [],
+	"apis": [],
+	"name": "artifactScraperDirect",
+	"ver": "23.7.25.1541",
+	"description": null,
+	"content": "file:///content.ts",
+	"useAsGlobalScript": true,
+	"transpiledContent": "file:///transpiledContent.ts",
+	"lastRunSuccessful": false,
+	"isTypescript": false,
+	"language": "typescript",
+	"jsscriptGroup": "e1ba4c8b-7c04-ee11-907c-000d3aba433d",
+	"package": "93e1803f-3404-ee11-907c-000d3aba433d"
+}

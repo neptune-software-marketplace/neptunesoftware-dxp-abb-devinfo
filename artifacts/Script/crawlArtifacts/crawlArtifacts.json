@@ -1,0 +1,47 @@
+{
+	"id": "6bfd9ed4-b1bd-ed11-a8e0-000d3aba7851",
+	"createdAt": "2023-03-08T13:05:09.353Z",
+	"createdBy": "ian@neptune-software.com",
+	"globalScripts": [
+		{
+			"id": "71B69969-EFFA-ED11-907C-000D3ABA412F",
+			"name": "ArtifactInfosystem - artifactScraperDirect",
+			"contextname": "artifactScraperDirect"
+		}
+	],
+	"externalModules": [],
+	"entitySets": [
+		{
+			"id": "7C188A83-A6BD-ED11-A8E0-000D3ABA7851",
+			"name": "artifact_infosystem_dependency_graph_snapshot",
+			"contextname": "artifact_infosystem_dependency_graph_snapshot"
+		},
+		{
+			"id": "7CCBD64C-AE0A-EE11-907C-000D3ABA433D",
+			"name": "dev_infosystem_snapshot",
+			"contextname": "dev_infosystem_snapshot"
+		},
+		{
+			"id": "7C188A83-A6BD-ED11-A8E0-000D3ABA7851",
+			"name": "dev_infosystem_snapshot",
+			"contextname": "dev_infosystem_snapshot"
+		},
+		{
+			"id": "7C188A83-A6BD-ED11-A8E0-000D3ABA7851",
+			"name": "dev_infosystem_snapshot_data",
+			"contextname": "dev_infosystem_snapshot_data"
+		}
+	],
+	"apis": [],
+	"name": "crawlArtifacts",
+	"ver": "23.7.25.1532",
+	"description": null,
+	"content": "file:///content.js",
+	"useAsGlobalScript": false,
+	"transpiledContent": null,
+	"lastRunSuccessful": true,
+	"isTypescript": false,
+	"language": "javascript",
+	"jsscriptGroup": "e1ba4c8b-7c04-ee11-907c-000d3aba433d",
+	"package": "93e1803f-3404-ee11-907c-000d3aba433d"
+}
