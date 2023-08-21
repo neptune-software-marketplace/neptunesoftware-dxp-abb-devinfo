@@ -15,7 +15,7 @@
 	"name": "Create Development Infosystem Snapshot",
 	"description": "Create snapshot of all artifacts for development infosystem",
 	"alertEmail": null,
-	"active": true,
+	"active": false,
 	"intervalMonths": null,
 	"intervalDays": 1,
 	"intervalHours": null,
@@ -23,10 +23,10 @@
 	"intervalSeconds": null,
 	"maxRuntimeSeconds": "3600",
 	"restartMaxRuntimeAbort": false,
-	"startdate": "2023-08-21T12:10:11.000Z",
+	"startdate": "2023-08-21T21:00:11.000Z",
 	"stopdate": "9999-12-31T00:00:00.000Z",
 	"executeInNextCycle": false,
-	"ver": "23.8.21.128",
+	"ver": "23.8.21.1236",
 	"machineId": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
 	"package": "93e1803f-3404-ee11-907c-000d3aba433d"
 }
