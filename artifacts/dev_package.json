@@ -127,7 +127,13 @@
 	"doc": [],
 	"wf_notifications": [],
 	"department": [],
-	"script_scheduler": [],
+	"script_scheduler": [
+		{
+			"id": "adf14006-1b40-ee11-b8f0-000d3ab39e52",
+			"name": "Create Development Infosystem Snapshot",
+			"description": "Create snapshot of all artifacts for development infosystem"
+		}
+	],
 	"wf_definition": [],
 	"connector": [],
 	"events": [],

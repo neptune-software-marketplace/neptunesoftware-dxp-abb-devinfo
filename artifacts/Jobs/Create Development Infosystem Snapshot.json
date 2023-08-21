@@ -1,0 +1,32 @@
+{
+	"id": "adf14006-1b40-ee11-b8f0-000d3ab39e52",
+	"createdAt": "2023-08-21T12:05:31.863Z",
+	"createdBy": "jens-uwe.gross@neptune-software.com",
+	"scripts": [
+		{
+			"id": "6BFD9ED4-B1BD-ED11-A8E0-000D3ABA7851",
+			"name": "crawlArtifacts",
+			"number": 1,
+			"abort": true,
+			"continue": false,
+			"skipto": false
+		}
+	],
+	"name": "Create Development Infosystem Snapshot",
+	"description": "Create snapshot of all artifacts for development infosystem",
+	"alertEmail": null,
+	"active": true,
+	"intervalMonths": null,
+	"intervalDays": 1,
+	"intervalHours": null,
+	"intervalMinutes": null,
+	"intervalSeconds": null,
+	"maxRuntimeSeconds": "3600",
+	"restartMaxRuntimeAbort": false,
+	"startdate": "2023-08-21T12:10:11.000Z",
+	"stopdate": "9999-12-31T00:00:00.000Z",
+	"executeInNextCycle": false,
+	"ver": "23.8.21.128",
+	"machineId": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+	"package": "93e1803f-3404-ee11-907c-000d3aba433d"
+}
