@@ -6,7 +6,7 @@ sap.ui.getCore().attachInit(function(startParams) {
     // data = startParameters from Cockpit Tile application settings (action tab)
     // Do your Stuff
     artifactList.setBusy(true);
-    roleTable.setBusy(true);
+
     // Some stuff needs to be timed later. Run them inside a timeout
     setTimeout(function() {
         //  Do something

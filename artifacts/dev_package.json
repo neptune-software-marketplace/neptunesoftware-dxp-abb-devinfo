@@ -11,8 +11,8 @@
 	"enableCICD": true,
 	"apps": [
 		{
-			"id": "5cdbb81b-12da-ed11-9f73-000d3aba78d6",
-			"application": "ai_overview",
+			"id": "a46d97da-dd5e-ee11-9937-000d3ab39899",
+			"application": "devinfo_overview",
 			"title": "Development Infosystem",
 			"description": "Development Infosystem"
 		}

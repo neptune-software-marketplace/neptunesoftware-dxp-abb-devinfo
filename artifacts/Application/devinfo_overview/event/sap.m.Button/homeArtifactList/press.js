@@ -1,2 +1,2 @@
 const key = navModeButton.getSelectedKey();
-toggleNavMode(key);
+toggleNavMode(artifactList, key);
