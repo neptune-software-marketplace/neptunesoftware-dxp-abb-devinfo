@@ -34,7 +34,7 @@
 	],
 	"apis": [],
 	"name": "artifactTree",
-	"ver": "23.11.20.1913",
+	"ver": "23.11.20.2019",
 	"description": null,
 	"content": "file:///content.js",
 	"useAsGlobalScript": false,

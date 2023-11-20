@@ -31,15 +31,15 @@ let artifactTree = [];
 let timestamp = 0;
 
 if (queryMode === "C") {
-    let snapshot = await entities.dev_infosystem_snapshot.findOne({
+    let snapshots = await entities.dev_infosystem_snapshot.find({
         skip: 0,
         take: 1,
         order: { createdAt: "DESC" },
     });
-    if (snapshot) {
-        timestamp = snapshot.updatedAt;
+    if (snapshots[0]) {
+        timestamp = snapshots[0].updatedAt;
         const snapshotData = await entities.dev_infosystem_snapshot_data.find({
-            where: {"snapshot_id": snapshot.id}
+            where: {"snapshot_id": snapshots[0].id}
         });
 
         for (const snapshotDataType of snapshotData) {
