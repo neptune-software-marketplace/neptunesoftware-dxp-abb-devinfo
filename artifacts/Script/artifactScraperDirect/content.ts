@@ -317,11 +317,12 @@ function mapWorkflowDefinitionUsing(workflow) {
 }
 
 async function scrapeArtifacts() {
-    const manager = modules.typeorm.getConnection().manager;
+    const manager = p9.manager ? p9.manager : modules.typeorm.getConnection().manager;
 
     apps = await manager.find('app', { select: ["id", , "package"] });
 
     const allArtifacts = [];
+
     for (const scraper of artifactScrapers) {
         const res = await scrapeIt(scraper, manager);
         allArtifacts.push(res);

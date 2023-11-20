@@ -14,7 +14,7 @@
 	"entitySets": [],
 	"apis": [],
 	"name": "roleDetailDirect",
-	"ver": "23.7.25.1518",
+	"ver": "23.11.20.1748",
 	"description": null,
 	"content": "file:///content.js",
 	"useAsGlobalScript": false,

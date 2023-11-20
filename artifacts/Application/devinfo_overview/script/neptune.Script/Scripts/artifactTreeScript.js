@@ -5,13 +5,14 @@ function toggleNavMode(tree, navMode) {
 
 
     if (navMode === 'TT') {
-        ["api ", "api_operation ", "script "].forEach(type => {
+        ["API (", "API Operation", "Server Script"].forEach(type => {
             const index = filteredTree.findIndex(x => x.name.startsWith(type));
             filteredTree.splice(index,1);
         })
     }
     else if (navMode == 'TL') {
-        ["api_group", "api ", "script_project"].forEach(type => {
+        ["API Group", "API (", "Script Project"].forEach(type => {
+            const typeText = getTypeText(type) + ' ';
             const node = filteredTree.find(x => x.name.startsWith(type));
             node.children.forEach(child => {
                 child.children = [];

@@ -862,6 +862,13 @@
 																					"value": "{type}",
 																					"script": "",
 																					"translation": []
+																				},
+																				{
+																					"attribute": "text",
+																					"grouping": "Formatter",
+																					"value": "Anonymous Function",
+																					"script": "file://event/sap.m.Text/oTextType1/text.script",
+																					"translation": []
 																				}
 																			],
 																			"data": []
@@ -1487,6 +1494,13 @@
 																							"grouping": "Properties",
 																							"value": "{type}",
 																							"script": "",
+																							"translation": []
+																						},
+																						{
+																							"attribute": "text",
+																							"grouping": "Formatter",
+																							"value": "Anonymous Function",
+																							"script": "file://event/sap.m.Text/textType1/text.script",
 																							"translation": []
 																						}
 																					],
@@ -2453,6 +2467,13 @@
 																					"value": "{type}",
 																					"script": "",
 																					"translation": []
+																				},
+																				{
+																					"attribute": "text",
+																					"grouping": "Formatter",
+																					"value": "Anonymous Function",
+																					"script": "file://event/sap.m.Text/oTextType2/text.script",
+																					"translation": []
 																				}
 																			],
 																			"data": []
@@ -3224,6 +3245,13 @@
 																							"value": "{type}",
 																							"script": "",
 																							"translation": []
+																						},
+																						{
+																							"attribute": "text",
+																							"grouping": "Formatter",
+																							"value": "Anonymous Function",
+																							"script": "file://event/sap.m.Text/textType3/text.script",
+																							"translation": []
 																						}
 																					],
 																					"data": []
@@ -3982,6 +4010,18 @@
 					"attributes": [],
 					"data": [
 						{
+							"fieldNo": "b1c8c8e3-ac83-4c29-aff4-a7b8f125173c",
+							"fieldName": "Formatter",
+							"fieldParent": "15ab4677-3b3a-4ae3-b386-c71e8b55a4ff",
+							"fieldType": "neptune.Script",
+							"script": "file://script/neptune.Script/Scripts/Formatter.js",
+							"customComponent": false,
+							"request": [],
+							"response": [],
+							"attributes": [],
+							"data": []
+						},
+						{
 							"fieldNo": "e43146d5-ee24-4b4e-a074-df0ea40cf988",
 							"fieldName": "ArtifactBundle",
 							"fieldParent": "15ab4677-3b3a-4ae3-b386-c71e8b55a4ff",
@@ -4388,7 +4428,7 @@
 		}
 	],
 	"componentInterface": [],
-	"ver": "23.9.29.1742",
+	"ver": "23.11.20.2053",
 	"application": "devinfo_overview",
 	"title": "Development Infosystem",
 	"description": "Development Infosystem",

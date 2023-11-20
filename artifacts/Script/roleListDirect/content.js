@@ -1,4 +1,4 @@
-const manager = modules.typeorm.getConnection().manager;
+const manager = p9.manager ? p9.manager : modules.typeorm.getConnection().manager;
 
 const roleList = []
 
@@ -11,6 +11,7 @@ const roles = await manager.find('role', {
 
 const { roleUsers, userRoles } = await usersForRole();
 
+//console.log(roleUsers);
 //console.log(userRoles);
 
 for (const role of roles) {

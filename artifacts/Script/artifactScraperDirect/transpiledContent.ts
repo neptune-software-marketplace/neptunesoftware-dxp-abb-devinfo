@@ -317,7 +317,7 @@ var ArtifactScraperDirect;
             return __generator(this, function (_a) {
                 switch (_a.label) {
                     case 0:
-                        manager = modules.typeorm.getConnection().manager;
+                        manager = p9.manager ? p9.manager : modules.typeorm.getConnection().manager;
                         return [4 /*yield*/, manager.find('app', { select: ["id", , "package"] })];
                     case 1:
                         apps = _a.sent();

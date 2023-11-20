@@ -14,7 +14,7 @@
 	"entitySets": [],
 	"apis": [],
 	"name": "artifactScraperDirect",
-	"ver": "23.7.25.1541",
+	"ver": "23.11.20.185",
 	"description": null,
 	"content": "file:///content.ts",
 	"useAsGlobalScript": true,

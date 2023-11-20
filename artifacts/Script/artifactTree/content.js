@@ -2,6 +2,26 @@ const { scrapeArtifacts } = globals.artifactScraperDirect;
 
 const queryMode = "C"; // cached or "D" = direct
 
+const artifactTypeNames = {
+    package: "Package",
+    launchpad: "Launchpad",
+    tile_group: "Tile Group",
+    tile: "Tile",
+    api_group: "API Group",
+    api: "API",
+    api_operation: "API Operation",
+    script_project: "Script Project",
+    script: "Server Script",
+    app: "Application",
+    adaptive: "Adaptive App",
+    connector: "Connector",
+    table: "Table",
+    role: "Role",
+    authentication: "Authentication",
+    job: "Job",
+    workflow_definition: "Workflow Definition"
+}
+
 let artifacts = [];
 let artifactLists = [];
 let packages = [];
@@ -63,7 +83,7 @@ function processPackages(packages) {
         return;
     }
     const packageRootItem = {};
-    packageRootItem.name = "package (" + packages.length + ")";
+    packageRootItem.name = artifactTypeNames["package"] + " (" + packages.length + ")";
     packageRootItem.objectId = "";
     packageRootItem.type = "package";
     packageRootItem.key = uuid();
@@ -121,7 +141,7 @@ function processArtifactLists(artifacts, parent, level, navMode) {
         //console.log(type);
         //if (type === "authentication") continue;
         const treeItem = {};
-        treeItem.name = type + " (" + artifacts[type].length + " )";
+        treeItem.name = artifactTypeNames[type] + " (" + artifacts[type].length + " )";
         treeItem.objectId = "";
         treeItem.type = type;
         treeItem.key = uuid();
@@ -150,6 +170,9 @@ function processArtifactLists(artifacts, parent, level, navMode) {
             const artifactIds = artifacts[type].map((artifact) => {
                 return { id: artifact.objectId, type: type };
             });
+            if (type === "workflow_definition") {
+                console.log(artifactIds.length);
+            }
 
             try {
                 createTree(artifactIds, treeItem.key, level + 1, navMode);
