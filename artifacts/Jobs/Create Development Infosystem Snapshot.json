@@ -21,12 +21,12 @@
 	"intervalHours": null,
 	"intervalMinutes": null,
 	"intervalSeconds": null,
-	"maxRuntimeSeconds": "3600",
+	"maxRuntimeSeconds": 3600,
 	"restartMaxRuntimeAbort": false,
 	"startdate": "2023-08-28T21:00:00.000Z",
 	"stopdate": "9999-12-31T00:00:00.000Z",
 	"executeInNextCycle": false,
 	"ver": "23.8.28.116",
-	"machineId": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+	"machineId": "5da1af28090690bd202e57da492d5f74c9db5b19bdab923aac98d07e5502f3b1",
 	"package": "93e1803f-3404-ee11-907c-000d3aba433d"
 }

@@ -16,6 +16,7 @@
 	"name": "artifactScraperDirect",
 	"ver": "23.11.20.2016",
 	"description": null,
+	"folder": null,
 	"content": "file:///content.ts",
 	"useAsGlobalScript": true,
 	"transpiledContent": "file:///transpiledContent.ts",

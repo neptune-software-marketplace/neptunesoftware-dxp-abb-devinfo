@@ -9,12 +9,18 @@
 			"id": "7CCBD64C-AE0A-EE11-907C-000D3ABA433D",
 			"name": "dev_infosystem_snapshot",
 			"contextname": "dev_infosystem_snapshot"
+		},
+		{
+			"id": "7ccbd64c-ae0a-ee11-907c-000d3aba433d",
+			"name": "dev_infosystem_snapshot",
+			"contextname": "dev_infosystem_snapshot"
 		}
 	],
 	"apis": [],
 	"name": "listSnapshots",
-	"ver": "23.7.25.1516",
+	"ver": "24.06.03.1047",
 	"description": null,
+	"folder": null,
 	"content": "file:///content.js",
 	"useAsGlobalScript": false,
 	"transpiledContent": null,

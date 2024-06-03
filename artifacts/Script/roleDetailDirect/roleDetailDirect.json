@@ -16,6 +16,7 @@
 	"name": "roleDetailDirect",
 	"ver": "23.11.20.1748",
 	"description": null,
+	"folder": null,
 	"content": "file:///content.js",
 	"useAsGlobalScript": false,
 	"transpiledContent": null,
