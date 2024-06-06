@@ -21,7 +21,7 @@
 	"frameType": null,
 	"type": "",
 	"image": null,
-	"icon": "/media/root/Development%20Infosystem/DevelopmentInfosystemTileLogo.svg",
+	"icon": "",
 	"backgroundType": null,
 	"backgroundColor": null,
 	"backgroundShade": null,
@@ -56,13 +56,13 @@
 	"helpText": null,
 	"helpEnabled": false,
 	"openClickTile": false,
-	"ver": "24.06.03.1430",
+	"ver": "24.06.03.1334",
 	"actionWebApp": null,
 	"name": "Development Infosystem",
 	"cardWidth": null,
 	"cardHeight": null,
 	"cardHeightFit": false,
-	"cardImage": null,
+	"cardImage": "/media/root/DevelopmentInfosystem/DevelopmentInfosystemTileLogo.svg",
 	"cardButtonIcon": null,
 	"cardButtonIconOnly": false,
 	"imagePlacement": null,
@@ -79,9 +79,9 @@
 	"package": "93e1803f-3404-ee11-907c-000d3aba433d",
 	"roles": [
 		{
-			"id": "e7513f92-15a8-4df5-a148-3c3fcf5ef70c",
-			"name": "ADMIN",
-			"ver": "24.05.24.1252"
+			"id": "cf181fed-a106-ee11-907c-000d3aba433d",
+			"name": "neptunesoftware-devinfo",
+			"ver": "23.6.9.845"
 		}
 	]
 }
