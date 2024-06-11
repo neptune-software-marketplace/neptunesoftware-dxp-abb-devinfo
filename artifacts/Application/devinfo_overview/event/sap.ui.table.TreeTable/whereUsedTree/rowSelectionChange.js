@@ -1,2 +1,2 @@
-showUsage(oEvent);
+// showUsage(oEvent);
 //navigateArtifactTree(oEvent);

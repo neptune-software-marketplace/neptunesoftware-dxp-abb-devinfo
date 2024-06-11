@@ -1391,7 +1391,7 @@
 																				{
 																					"attribute": "width",
 																					"grouping": "Properties",
-																					"value": "50px",
+																					"value": "90px",
 																					"script": "",
 																					"translation": []
 																				},
@@ -1413,8 +1413,58 @@
 																					"customComponent": false,
 																					"request": [],
 																					"response": [],
-																					"attributes": [],
+																					"attributes": [
+																						{
+																							"attribute": "justifyContent",
+																							"grouping": "Properties",
+																							"value": "SpaceBetween",
+																							"script": "",
+																							"translation": []
+																						}
+																					],
 																					"data": [
+																						{
+																							"fieldNo": "95437455-bfb5-4210-9c3b-a0f2425d87e3",
+																							"fieldName": "ButtonSetForShowUsage",
+																							"fieldParent": "e3fb243c-3f41-4fa4-cd97-58bf5317d556",
+																							"fieldType": "sap.m.Button",
+																							"script": "",
+																							"customComponent": false,
+																							"request": [],
+																							"response": [],
+																							"attributes": [
+																								{
+																									"attribute": "type",
+																									"grouping": "Properties",
+																									"value": "Transparent",
+																									"script": "",
+																									"translation": []
+																								},
+																								{
+																									"attribute": "tooltip",
+																									"grouping": "Properties",
+																									"value": "Set as top artifact",
+																									"script": "",
+																									"translation": []
+																								},
+																								{
+																									"attribute": "icon",
+																									"grouping": "Properties",
+																									"value": "sap-icon://back-to-top",
+																									"script": "",
+																									"translation": []
+																								},
+																								{
+																									"attribute": "press",
+																									"grouping": "Events",
+																									"value": "Anonymous Function",
+																									"script": "showUsage(oEvent);",
+																									"language": "javascript",
+																									"translation": []
+																								}
+																							],
+																							"data": []
+																						},
 																						{
 																							"fieldNo": "9439cf87-ff79-4564-e5c3-0a2548b5679f",
 																							"fieldName": "Button6",
@@ -4428,7 +4478,7 @@
 		}
 	],
 	"componentInterface": [],
-	"ver": "24.06.11.0748",
+	"ver": "24.06.11.0840",
 	"application": "devinfo_overview",
 	"title": "Development Infosystem",
 	"description": "Development Infosystem",
