@@ -3,11 +3,11 @@
 	"createdAt": "2023-06-06T06:34:55.573Z",
 	"createdBy": "jens-uwe.gross@neptune-software.com",
 	"git": {
-		"remote": "https://github.com/neptune-software-marketplace/neptunesoftware-dxp-abb-devinfo.git"
+		"remote": "https://github.com/CASTANA-Solutions/neptunesoftware-dxp-abb-devinfo.git"
 	},
 	"name": "neptunesoftware-dxp-abb-devinfo",
 	"description": "Neptune DXP Open Edition Development Infosystem",
-	"ver": "23.8.14.1421",
+	"ver": "24.06.11.0749",
 	"enableCICD": true,
 	"apps": [
 		{
@@ -16,7 +16,7 @@
 			"title": "Development Infosystem",
 			"description": "Development Infosystem",
 			"package": {
-				"id": "93E1803F-3404-EE11-907C-000D3ABA433D"
+				"id": "93e1803f-3404-ee11-907c-000d3aba433d"
 			}
 		}
 	],
