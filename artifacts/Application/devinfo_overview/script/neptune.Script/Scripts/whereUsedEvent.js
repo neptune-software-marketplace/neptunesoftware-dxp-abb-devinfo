@@ -1,5 +1,5 @@
 function showUsage(event) {
-    let context = event.getParameter("rowContext");
+    let context = event.getParameter("rowContext") || event.getSource().getBindingContext();
     if (!context) {
         return;
     }
