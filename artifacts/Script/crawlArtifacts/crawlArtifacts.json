@@ -7,6 +7,11 @@
 			"id": "71B69969-EFFA-ED11-907C-000D3ABA412F",
 			"name": "DevelopmentInfosystem - artifactScraperDirect",
 			"contextname": "artifactScraperDirect"
+		},
+		{
+			"id": "71b69969-effa-ed11-907c-000d3aba412f",
+			"name": "DevelopmentInfosystem - artifactScraperDirect",
+			"contextname": "artifactScraperDirect"
 		}
 	],
 	"externalModules": [],
@@ -17,6 +22,16 @@
 			"contextname": "dev_infosystem_snapshot"
 		},
 		{
+			"id": "7ccbd64c-ae0a-ee11-907c-000d3aba433d",
+			"name": "dev_infosystem_snapshot",
+			"contextname": "dev_infosystem_snapshot"
+		},
+		{
+			"id": "7c188a83-a6bd-ed11-a8e0-000d3aba7851",
+			"name": "dev_infosystem_snapshot_data",
+			"contextname": "dev_infosystem_snapshot_data"
+		},
+		{
 			"id": "7C188A83-A6BD-ED11-A8E0-000D3ABA7851",
 			"name": "dev_infosystem_snapshot_data",
 			"contextname": "dev_infosystem_snapshot_data"
@@ -24,12 +39,11 @@
 	],
 	"apis": [],
 	"name": "crawlArtifacts",
-	"ver": "24.06.07.1532",
+	"ver": "24.11.07.1657",
 	"description": null,
 	"folder": null,
 	"content": "file:///content.js",
 	"useAsGlobalScript": false,
-	"transpiledContent": null,
 	"lastRunSuccessful": true,
 	"isTypescript": false,
 	"language": "javascript",

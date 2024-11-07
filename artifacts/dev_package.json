@@ -9,15 +9,16 @@
 	"description": "Neptune DXP Open Edition Development Infosystem",
 	"ver": "24.06.11.0749",
 	"enableCICD": true,
+	"internalReadOnly": false,
+	"oeVersion": null,
+	"excludeTemplateFiles": false,
+	"roles": [],
 	"apps": [
 		{
 			"id": "a46d97da-dd5e-ee11-9937-000d3ab39899",
 			"application": "devinfo_overview",
 			"title": "Development Infosystem",
-			"description": "Development Infosystem",
-			"package": {
-				"id": "93e1803f-3404-ee11-907c-000d3aba433d"
-			}
+			"description": "Development Infosystem"
 		}
 	],
 	"api": [
@@ -116,8 +117,11 @@
 			"name": "Development Infosystem"
 		}
 	],
+	"tile_layout": [],
 	"category": [],
+	"tilegroup_layout": [],
 	"launchpad": [],
+	"launchpad_layout": [],
 	"certificates": [],
 	"role": [
 		{
@@ -142,5 +146,6 @@
 	"events": [],
 	"code_snippets": [],
 	"wf_determination": [],
-	"wf_taskaction": []
+	"wf_taskaction": [],
+	"theme_ui5": []
 }
