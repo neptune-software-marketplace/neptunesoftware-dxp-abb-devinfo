@@ -4496,6 +4496,7 @@
 	"ui5_table": true,
 	"ui5_tnt": false,
 	"ui5_uxap": false,
+	"ui5_integration": null,
 	"ui5_chart": false,
 	"ui5_theme": "sap_horizon",
 	"ui5_version": "1.108",

@@ -3,11 +3,12 @@
 	"createdAt": "2023-06-06T06:34:55.573Z",
 	"createdBy": "jens-uwe.gross@neptune-software.com",
 	"git": {
-		"remote": "https://github.com/neptune-software-marketplace/neptunesoftware-dxp-abb-devinfo.git"
+		"remote": "https://github.com/neptune-software-marketplace/neptunesoftware-dxp-abb-devinfo.git",
+		"branch": "v25"
 	},
 	"name": "neptunesoftware-dxp-abb-devinfo",
 	"description": "Neptune DXP Open Edition Development Infosystem",
-	"ver": "24.06.11.0749",
+	"ver": "25.05.28.1703",
 	"enableCICD": true,
 	"internalReadOnly": false,
 	"oeVersion": null,
@@ -143,9 +144,12 @@
 	],
 	"wf_definition": [],
 	"connector": [],
+	"i18n": [],
 	"events": [],
 	"code_snippets": [],
 	"wf_determination": [],
 	"wf_taskaction": [],
-	"theme_ui5": []
+	"theme_ui5": [],
+	"webapp": [],
+	"ui5_control": []
 }

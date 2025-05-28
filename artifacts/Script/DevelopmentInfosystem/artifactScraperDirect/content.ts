@@ -32,15 +32,24 @@ const artifactInfoAdaptive: SelectInfo =  ['application', 'connectorid', ...arti
 const artifactConnector: SelectInfo =  ['settings', ...artifactInfoPackage];
 const artifactJob: SelectInfo =  ['scripts', ...artifactInfoPackage];
 const artifactWorkflowDefinition: SelectInfo = ['id', 'title', 'package', 'tasks'];
+const artifactTileLayoutDefinition: SelectInfo = ['id', 'NAME', 'package'];
 
 const artifactScrapers: ArtifactScraper[] = [
     {artifactType: 'package', repositoryName: 'package', selectInfo: artifactInfoBasic, artifactMapFn: mapDevelopmentPackage},
     {artifactType: 'launchpad', repositoryName: 'launchpad', selectInfo: artifactInfoLaunchpad, artifactMapFn: mapLaunchpad,
      usingFn: [{propertyExtractFn: x => x.cat, artifactType: "tile_group"}, mapLaunchpadApp]},
     {artifactType: 'tile_group', repositoryName: 'category', selectInfo: artifactInfoTitle, artifactMapFn: mapLaunchpad,
-     usingFn: [{propertyExtractFn: x => x.tilegroups, artifactType: "tile_group"}, {propertyExtractFn: x => x.tiles, artifactType: "tile"}]},
+     usingFn: [{propertyExtractFn: x => x.tilegroups, artifactType: "tile_group"},
+               {propertyExtractFn: x => x.tiles, artifactType: "tile"},
+               {propertyExtractFn: x => x.lightTileLayouts, artifactType: "tile_layout"},
+               {propertyExtractFn: x => x.darkTileLayouts, artifactType: "tile_layout"},
+               {propertyExtractFn: x => x.lightGroupLayouts, artifactType: "tilegroup_layout"},
+               {propertyExtractFn: x => x.darkGroupLayouts, artifactType: "tilegroup_layout"}]},
     {artifactType: 'tile', repositoryName: 'tile', selectInfo: artifactInfoTile, artifactMapFn: mapLaunchpad,
-     usingFn: [{propertyExtractFn: x => x.roles, artifactType: "role"}, mapTileChildren]},
+     usingFn: [{propertyExtractFn: x => x.roles, artifactType: "role"},
+               {propertyExtractFn: x => x.lightTileLayouts, artifactType: "tile_layout"},
+               {propertyExtractFn: x => x.darkTileLayouts, artifactType: "tile_layout"},
+                mapTileChildren]},
     {artifactType: 'api_group', repositoryName: 'api_group', selectInfo: artifactInfoPackage, artifactMapFn: mapInfoPackage,
      childrenFn: [{propertyExtractFn: x => x.apis, artifactType: "api"}]},
     {artifactType: 'api', repositoryName: 'api', selectInfo: artifactInfoAPI, artifactMapFn: mapAPI,
@@ -64,9 +73,12 @@ const artifactScrapers: ArtifactScraper[] = [
     {artifactType: 'role', repositoryName: 'role', selectInfo: artifactInfoPackage, artifactMapFn: mapInfoPackage},
     {artifactType: 'authentication', repositoryName: 'api_authentication', selectInfo: artifactInfoPackage, artifactMapFn: mapInfoPackage},
     {artifactType: 'job', repositoryName: 'script_scheduler', selectInfo: artifactJob, artifactMapFn: mapInfoPackage,
-     usingFn: [{propertyExtractFn: x => x.scripts.map(x => x.id), artifactType: "script"}]}, 
+     usingFn: [{propertyExtractFn: x => x.scripts ? x.scripts.map(x => x.id) : [], artifactType: "script"}]}, 
     {artifactType: 'workflow_definition', repositoryName: "wf_definition", selectInfo: artifactWorkflowDefinition, artifactMapFn: mapInfoWorkflowDefinition,
-     usingFn: [mapWorkflowDefinitionUsing] }
+     usingFn: [mapWorkflowDefinitionUsing] },
+     {artifactType: 'tile_layout', repositoryName: 'tile_layout', selectInfo: artifactTileLayoutDefinition, artifactMapFn: mapInfoTileLayout},
+     {artifactType: 'tilegroup_layout', repositoryName: 'tilegroup_layout', selectInfo: artifactTileLayoutDefinition, artifactMapFn: mapInfoTileLayout},
+     {artifactType: 'launchpad_layout', repositoryName: 'launchpad_layout', selectInfo: artifactTileLayoutDefinition, artifactMapFn: mapInfoTileLayout}
 
 ];
 
@@ -316,6 +328,23 @@ function mapWorkflowDefinitionUsing(workflow) {
     return using;
 }
 
+function mapInfoTileLayout({id, NAME, package}) {
+        return [{
+        "type": "",
+        "packageId": package ?? noPackageId,
+        "packageName": null,
+        "objectId": id,
+        "name": NAME,
+        "id": uuid(),
+        "parents": [package],
+        "children": [],
+        "using": [],
+        "used_by": [],
+        "title": NAME,
+        "description": ""
+        }]
+}
+
 async function scrapeArtifacts() {
     const manager = p9.manager ? p9.manager : modules.typeorm.getConnection().manager;
 
@@ -412,6 +441,7 @@ async function scrapeIt(scraper: ArtifactScraper, manager) {
                                     if (usingFn instanceof Function) {
                                         allUsing.push(usingFn(artifact));
                                     } else {
+                                        //console.log(artifact);
                                         allUsing.push(usingFn.propertyExtractFn(artifact).map(x => {  return { id: x, type: usingFn.artifactType}}));
                                         //usingFn.propertyExtractFn(artifact).map(x => { console.log(x) });
                                     }

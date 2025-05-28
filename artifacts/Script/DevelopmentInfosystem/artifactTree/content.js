@@ -19,7 +19,10 @@ const artifactTypeNames = {
     role: "Role",
     authentication: "Authentication",
     job: "Job",
-    workflow_definition: "Workflow Definition"
+    workflow_definition: "Workflow Definition",
+    tile_layout: "Tile Layout",
+    tilegroup_layout: "Tilegroup Layout",
+    launchpad_layout: "Launchpad Layout"
 }
 
 let artifacts = [];
