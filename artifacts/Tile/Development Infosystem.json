@@ -48,7 +48,6 @@
 	"styleClass": null,
 	"titleAlignment": null,
 	"titleLevel": null,
-	"subTitleLevel": null,
 	"dataUrl": null,
 	"dataInterval": null,
 	"footer": null,
@@ -74,11 +73,7 @@
 	"imageRepeat": null,
 	"imageSize": null,
 	"imagePosition": null,
-	"iconPlacement": null,
-	"imgShapeCircle": false,
-	"iconOnlyMenu": false,
 	"forceAttributes": false,
-	"imageType": null,
 	"openText": null,
 	"imageHeight": null,
 	"bodyHeight": null,
@@ -86,21 +81,11 @@
 	"sapICFNode": null,
 	"actionType": "A",
 	"cockpitTile": true,
-	"cardFilterBlur": null,
-	"enableFilterBrightness": false,
-	"cardFilterBrightness": null,
-	"enableFilterGrayscale": false,
-	"cardFilterGrayscale": null,
-	"enableFilterHuerotate": false,
-	"cardFilterHuerotate": null,
-	"enableFilterInvert": false,
-	"cardFilterInvert": null,
-	"enableFilterOpacity": false,
-	"cardFilterOpacity": null,
-	"enableFilterSaturate": false,
-	"cardFilterSaturate": null,
-	"cardBackgroundMaskImage": null,
-	"cardBackgroundMaskCustom": null,
+	"cardImageDarkNone": false,
+	"imageDarkNone": false,
+	"noInheritTileLayout": false,
+	"imageType": null,
+	"FIORI_STYLE": null,
 	"package": "93e1803f-3404-ee11-907c-000d3aba433d",
 	"roles": [
 		{
@@ -108,5 +93,7 @@
 			"name": "neptunesoftware-devinfo",
 			"ver": "23.6.9.845"
 		}
-	]
+	],
+	"lightTileLayouts": [],
+	"darkTileLayouts": []
 }

@@ -1,0 +1,52 @@
+{
+	"id": "6bfd9ed4-b1bd-ed11-a8e0-000d3aba7851",
+	"createdAt": "2023-03-08T13:05:09.353Z",
+	"createdBy": "ian@neptune-software.com",
+	"globalScripts": [
+		{
+			"id": "71B69969-EFFA-ED11-907C-000D3ABA412F",
+			"name": "DevelopmentInfosystem - artifactScraperDirect",
+			"contextname": "artifactScraperDirect"
+		},
+		{
+			"id": "71b69969-effa-ed11-907c-000d3aba412f",
+			"name": "DevelopmentInfosystem - artifactScraperDirect",
+			"contextname": "artifactScraperDirect"
+		}
+	],
+	"externalModules": [],
+	"entitySets": [
+		{
+			"id": "7ccbd64c-ae0a-ee11-907c-000d3aba433d",
+			"name": "dev_infosystem_snapshot",
+			"contextname": "dev_infosystem_snapshot"
+		},
+		{
+			"id": "7ccbd64c-ae0a-ee11-907c-000d3aba433d",
+			"name": "dev_infosystem_snapshot",
+			"contextname": "dev_infosystem_snapshot"
+		},
+		{
+			"id": "7c188a83-a6bd-ed11-a8e0-000d3aba7851",
+			"name": "dev_infosystem_snapshot_data",
+			"contextname": "dev_infosystem_snapshot_data"
+		},
+		{
+			"id": "7c188a83-a6bd-ed11-a8e0-000d3aba7851",
+			"name": "dev_infosystem_snapshot_data",
+			"contextname": "dev_infosystem_snapshot_data"
+		}
+	],
+	"apis": [],
+	"name": "crawlArtifacts",
+	"ver": "24.11.07.1657",
+	"description": null,
+	"folder": null,
+	"content": "file:///content.js",
+	"useAsGlobalScript": false,
+	"lastRunSuccessful": true,
+	"isTypescript": false,
+	"language": "javascript",
+	"jsscriptGroup": "e1ba4c8b-7c04-ee11-907c-000d3aba433d",
+	"package": "93e1803f-3404-ee11-907c-000d3aba433d"
+}
